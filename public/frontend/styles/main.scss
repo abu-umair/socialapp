@@ -1,0 +1,554 @@
+body {
+    background-color: #fff;
+    font-family: 'Assistant', sans-serif;
+    color: #7D7D7D;
+
+    // font-family: 'Playfair Display', serif;
+}
+
+// navbar
+.navbar-brand {
+
+    img {
+        max-height: 40px;
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #7494D4;
+
+            &.active {
+                // jika nav-link dg tambahan active
+                font-weight: bold;
+                color: #7494D4 !important;
+            }
+        }
+    }
+}
+
+
+.btn-navbar-right {
+    margin-top: -10px !important;
+    // !important: harus di apply, penting banget
+    margin-bottom: -8px !important;
+    margin-right: -16px !important;
+
+    height: 70px;
+    border-radius: 0;
+}
+
+.btn-login {
+    background-color: #7494D4;
+    color: #fff;
+
+    &:hover {
+        background-color: #7EA2E9;
+        color: #ffffff;
+    }
+}
+
+// header
+header {
+    padding: 180px 0 165px;
+    // 180px: atas, 0: kir dan kanan, 165px: bawah
+    background: url('../images/imgheader.png');
+    background-size: cover;
+    // cover: mengepaskan gambar dengan stabil
+    margin-top: -70px;
+    // dibuat keatas, seperti tombol
+
+    h1,
+    p {
+        // h1 & p
+        color: #ffffff;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .btn-get-started {
+        background-color: #FF7C00;
+        color: #ffff;
+
+        &:hover {
+            background-color: #FF9C3F;
+            color: #ffff;
+        }
+    }
+
+}
+
+
+// statistic
+.section-stats {
+    margin-top: -50px;
+
+    .stats-detail {
+        padding-top: 15px;
+        background-color: #fff;
+        padding-left: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        // margin: biasanya sudah dikasi boots sylingnya
+    }
+
+    p {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+}
+
+//Popular
+.section-popular {
+    min-height: 540px;
+    background-color: #7494D4;
+    margin-top: -50px;
+    // untuk offsite keatas
+    margin-bottom: -230px;
+    // untuk card bisa offsite
+
+    .section-popular-heading {
+        margin-top: 150px;
+
+        h2,
+        p {
+            color: #ffff;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+// content popular
+.section-popular-content {
+    .section-popular-travel {
+        .card-travel {
+            min-height: 380px;
+            background-color: #686868;
+            color: #ffff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 20px;
+            //ketika layar kecil, card jd kecil dan dibawahnya ada jarak 
+        }
+
+        .travel-country {
+            font-size: 18px;
+            color: #ffff;
+        }
+
+        .travel-location {
+            font-size: 26px;
+            color: #ffff;
+        }
+
+        .travel-button {
+            .btn-travel-details {
+                background-color: #FF7C00;
+                color: #fff;
+
+                &:hover {
+                    background-color: #FF9C3F;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// networks
+.section-networks {
+    background-color: #fff;
+    padding-top: 240px;
+    margin-top: -170px;
+    // dinaikin, offsite jarak ke container
+    padding-block: 50px;
+
+    // jarak padding ke container
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 100%;
+        // semaximal .tanda. buat gambar tidak offsite
+        // & jk di scrol auto ikut browser
+    }
+}
+
+// testimonial-heading
+.section-testimonial-heading {
+    background: linear-gradient(180deg, #FFFBFB 0%, #EFF1F4 100%);
+    padding-top: 50px;
+    min-height: 506px;
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+// testimonialContent
+.section-testimonial-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+    // border: solid;
+
+
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 11px;
+        margin-bottom: 20px;
+        // border: solid;
+
+        .testimonial-content {
+            min-height: 200px;
+        }
+
+        img {
+
+            max-width: 50%;
+            background-size: cover;
+            // sebenarnya 100%, krn export 2x besar
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        .testimonial {
+            font-weight: 200;
+            font-size: 18px;
+            color: #7D7D7D;
+            min-height: 160px;
+            // agar rata ketika tidak seimbang contentnya
+        }
+
+        .trip-to {
+            font-style: normal;
+            font-size: 20px;
+            color: #C4C4C4;
+        }
+
+        hr {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+
+    }
+
+    // get started
+    .btn-get-started {
+        background-color: #FF7C00;
+        color: #ffff;
+
+        &:hover {
+            background-color: #FF9C3F;
+            color: #ffff;
+        }
+    }
+
+    .btn-need-help {
+        background-color: #C4C4C4;
+        color: #ffff;
+
+        &:hover {
+            background-color: #E5E5E5;
+            color: #ffff;
+        }
+    }
+}
+
+// footer
+.section-footer {
+    a {
+        color: #686868;
+    }
+}
+
+// -------details--------
+.section-details-header {
+    min-height: 310px;
+    background-color: #CBD6E2;
+    margin-top: -70px;
+}
+
+.section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+    // 100vh : viewport Height tinggi se 100% browser hightnya (vw jg ada) 
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .breadcrumb-item {
+        &.active {
+            font-weight: bold;
+            color: #7D7D7D;
+        }
+    }
+
+    .card-details {
+        padding: 30px;
+        border-radius: 11px;
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #CDCDCD;
+        }
+
+        .trip-informations {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+                color: #7494D4;
+            }
+
+            td {
+                font-weight: 300;
+                font-size: 18px;
+                color: #7D7D7D;
+            }
+
+            .text-blue {
+                color: #02536E;
+                font-weight: bold;
+            }
+
+            .text-red {
+                color: #C9220C;
+                font-weight: bold;
+            }
+        }
+
+        .payment-instructions {
+            font-weight: 300;
+            font-size: 14px;
+            color: #C4C4C4;
+        }
+
+        .bank-item {
+            h3 {
+                font-size: 18px;
+                margin-bottom: 0;
+                color: #7D7D7D;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .bank-image {
+                width: 45px;
+                height: 45px;
+                float: left;
+                // agar kekiri
+            }
+
+            .description {
+                margin-left: 10px;
+                overflow: hidden;
+                // ;overflow: misal scrol gak keluar-keluar
+                float: left;
+                // agar kekiri
+
+                p {
+                    font-weight: normal;
+                    font-size: 16px;
+                    color: #7D7D7D;
+                }
+
+                h3 {
+                    font-weight: normal;
+                    font-size: 16px;
+                    color: #7D7D7D;
+                }
+            }
+        }
+
+
+
+
+
+        .disclamer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #CDCDCD;
+        }
+
+        .gj-datepicker {
+
+            // gj-datepicke: bawaan gijgo
+            // hilangin garis Y
+            .datepicker {
+                border-right: 0;
+            }
+
+            .input-group-append {
+
+                // milik gijgo
+                .btn {
+                    padding-right: 30px;
+                    // hilangin garis Y
+                    // tapi tanpa ini jg sudah hilang
+                }
+            }
+        }
+
+        .btn-add-now {
+            background-color: #7494D4;
+            color: #ffffff;
+
+            &:hover {
+                background-color: #7EA2E9;
+                color: #ffffff;
+            }
+        }
+
+        .features {
+            margin-top: 20px;
+
+            h3 {
+                font-size: 18px;
+                color: #7494D4;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+                // max-width: 110px;
+            }
+
+            .description {
+                margin-left: 10px;
+                overflow: hidden;
+                float: left;
+                // float: agar numpuk kiri
+            }
+
+            .features-image {
+                width: 45px;
+                height: 45px;
+                float: left;
+            }
+
+        }
+
+    }
+
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+        // border-bottom: gak ada garis dibawahnya
+    }
+
+    // galery
+    .gallery {
+        .xzoom-container {
+            display: block;
+
+            .xzoom {
+                width: 100%;
+                box-shadow: none;
+                margin-bottom: 10px;
+            }
+
+            .xactive {
+                border: 4px solid #1ABC9C;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .members {
+        .members-image {
+            width: 51px;
+            height: 51px;
+        }
+    }
+
+    .join-container {
+        // border: solid;
+
+        .btn-join-now {
+            background-color: #FF7C00;
+            color: #fff;
+            border-radius: 0;
+
+            &:hover {
+                background-color: #FF9C3F;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// success
+.section-success {
+    height: 90vh;
+
+    h1 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        color: #b1b1b1;
+    }
+
+    .btn-home-page {
+        background-color: #7494D4;
+        color: #EFF1F4;
+
+        &:hover {
+            background-color: #7EA2E9;
+            color: #EFF1F4;
+        }
+    }
+}
